@@ -8,6 +8,6 @@ app.use(bodyParser.json());
 
 app.post("/products", database.createProduct);
 
-app.get("/products");
+app.get("/products", database.getProducts);
 
 app.listen(3000);
